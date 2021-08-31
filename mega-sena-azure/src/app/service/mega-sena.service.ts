@@ -8,7 +8,9 @@ import { Observable } from 'rxjs';
 })
 export class MegaSenaService {
 
-  private URL_NUMBERS = 'http://localhost:8080/megasena/complete-game';
+  private URL_NUMBERS_LOCAL = 'http://localhost:8080/megasena/complete-game';
+  private URL_NUMBERS = 'https://megasena-1630256128905.azurewebsites.net/megasena/complete-game';
+
   constructor(private http: HttpClient,
     private sanitizer: DomSanitizer) { }
 
